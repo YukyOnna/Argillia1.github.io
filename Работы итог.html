@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argillia - авторская керамика и скульптура</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: url('https://avatars.mds.yandex.net/get-altay/14033308/2a000001917655ae4e2eaa9b958b75879a4f/XXXL') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+            padding: 0 20px;
+            position: relative;
+        }
+        
+        header {
+            background-color: rgba(34, 34, 34, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 15px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .artwork {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+        
+        .artwork:hover {
+            transform: translateY(-5px);
+        }
+        
+        .artwork-img {
+            width: calc(100% - 20px);
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            margin: 10px auto;
+            border-radius: 4px;
+        }
+        
+        .artwork-info {
+            padding: 20px;
+        }
+        
+        .artwork-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: #222;
+            padding: 0 10px;
+        }
+        
+        .year {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+            padding: 0 10px;
+        }
+        
+        .description {
+            margin-bottom: 1.2rem;
+            color: #444;
+            padding: 0 10px;
+            line-height: 1.5;
+        }
+        
+        .technique {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+        
+        /* Блок описания сайта */
+        .about-site {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .site-title {
+            font-size: 2.2rem;
+            color: #222;
+            margin-bottom: 20px;
+        }
+        
+        .site-description {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .signature {
+            font-style: italic;
+            color: #666;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background-color: rgba(34, 34, 34, 0.9);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .artwork {
+                margin: 15px 0;
+            }
+            
+            body {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Argillia - личный магазин скульптора для продажи глиняных изделий</h1>
+    </header>
+    
+    <div class="gallery">
+        <!-- Работа 1 -->
+        <div class="artwork">
+            <img src="C:\Users\User\Desktop\Картинки\l.jpg" alt=""Весенняя прогулка"" class="artwork-img" style="max-width: 100%; height: auto;">
+            <div class="artwork-info">
+                <h2 class="artwork-title">"Весенняя прогулка"</h2>
+                <p class="year">2023</p>
+                <p class="description">Скульптура изображает девочку, осторожно шагающую по камням через речку. Её лёгкая походка и беззаботный взгляд передают радость первых тёплых дней, когда природа пробуждается, а каждый шаг — это маленькое приключение. Композиция символизирует детскую непосредственность, гармонию с природой и весеннее обновление.</p>
+                <p class="technique">Художественная глина</p>
+                <p class="technique">Высота: 72 см</p>
+                <p class="technique">Цена: 12 800 рублей</p>
+            </div>
+        </div>
+
+        <!-- Работа 2 -->
+        <div class="artwork">
+            <img src="C:\Users\User\Desktop\Картинки\ы.jpg" alt=""Собор Парижской Богоматери"" class="artwork-img" style="max-width: 100%; height: auto;">
+            <div class="artwork-info">
+                <h2 class="artwork-title">"Собор Парижской Богоматери"</h2>
+                <p class="year">2024</p>
+                <p class="description">Скульптура создана по одноимённому роману Виктора Гюго. Рельеф, как и само произведение, идеально показывает проблемы несправедливости между двумя кастами: богатыми и бедными</p>
+                <p class="technique">Художественная глина</p>
+                <p class="technique">Высота: 25 см</p>
+                <p class="technique">Цена: 7 500 рублей</p>
+            </div>
+        </div>
+
+        <!-- Работа 3 -->
+        <div class="artwork">
+            <img src="C:\Users\User\Desktop\Картинки\п.jpg" alt=""Хомячок"" class="artwork-img" style="max-width: 100%; height: auto;">
+            <div class="artwork-info">
+                <h2 class="artwork-title">"Хомячок"</h2>
+                <p class="year">2022</p>
+                <p class="description">Очаровательная миниатюрная скульптура, запечатлевшая пушистого хомяка в момент его любимого занятия — трапезы. Скульптура излучает тёплую, добрую энергетику, напоминая о простых радостях жизни. Выразительные глазки-бусинки придают фигурке живость и характер.</p>
+                <p class="technique">Керамика</p>
+                <p class="technique">Высота: 12 см</p>
+                <p class="technique">Цена: 4 000 рублей</p>
+            </div>
+        </div>
+
+        <!-- Работа 4 -->
+        <div class="artwork">
+            <img src="C:\Users\User\Desktop\Картинки\р.jpg" alt=""Созерцатель тишины"" class="artwork-img" style="max-width: 100%; height: auto;">
+            <div class="artwork-info">
+                <h2 class="artwork-title">"Созерцатель тишины"</h2>
+                <p class="year">2023</p>
+                <p class="description">Скульптура изображает капибару в характерной позе — спокойно сидящую на земле, с благородной осанкой и внимательным взглядом. Скульптор тонко передала гладкую шерсть, массивное тело и характерные черты самого крупного грызуна в мире.</p>
+                <p class="technique">Обожжённая глина</p>
+                <p class="technique">Высота: 32 см</p>
+                <p class="technique">Цена: 9 700 рублей</p>
+            </div>
+        </div>
+
+        <!-- Работа 5 -->
+        <div class="artwork">
+            <img src="C:\Users\User\Desktop\Картинки\о.jpg" alt="Плитка "Старинный быт"" class="artwork-img" style="max-width: 100%; height: auto;">
+            <div class="artwork-info">
+                <h2 class="artwork-title">Настенная плитка "Старинный быт"</h2>
+                <p class="year">2020</p>
+                <p class="description">Небольшое изображение старинного патриархата, где мужчина отвечал за быт и свою супругу.</p>
+                <p class="technique">Керамика</p>
+                <p class="technique">Размеры: 15*15 см</p>
+                <p class="technique">Цена: 6 000 рублей</p>
+            </div>
+        </div>
+
+        <!-- Работа 6 -->
+        <div class="artwork">
+            <img src="C:\Users\User\Desktop\Картинки\л.jpg" alt="Караван" class="artwork-img" style="max-width: 100%; height: auto;">
+            <div class="artwork-info">
+                <h2 class="artwork-title">"Караван"</h2>
+                <p class="year">2023</p>
+                <p class="description">Скульптура изображает переправу арабских торговцев через жаркую пустыню. Благодаря этому произведению, человек может ощутить всю тяжесть той торговли, через которую раньше проходили обычные люди</p>
+                <p class="technique">Шамот</p>
+                <p class="technique">Высота: 24 см</p>
+                <p class="technique">Цена: 14 200 рублей</p>
+            </div>
+        </div>
+
+        <!-- Работа 7 -->
+        <div class="artwork">
+            <img src="C:\Users\User\Desktop\Картинки\т.jpg" alt="Танец Журавля и Змеи" class="artwork-img" style="max-width: 100%; height: auto;">
+            <div class="artwork-info">
+                <h2 class="artwork-title">"Танец Журавля и Змеи"</h2>
+                <p class="year">2023</p>
+                <p class="description">Скульптура изображает двух мастеров восточных боевых искусств. Статуэтка отдаёт ощущением восточной Японии, показывая всё могущество их бойцов</p>
+                <p class="technique">Обожженная глина</p>
+                <p class="technique">Высота: 27 см</p>
+                <p class="technique">Цена: 7 300 рублей</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок с описанием сайта -->
+    <div class="about-site">
+        <h2 class="site-title">Argillia — глина как искусство</h2>
+        <p class="site-description">
+            Добро пожаловать в мир рукотворной керамики и скульптуры. Каждое изделие мастера — уникальное произведение, созданное вручную с вниманием к деталям и любовью к материалу. 
+            <br><br>
+            От миниатюрных фигурок до монументальных композиций — здесь вы найдёте работы, которые несут в себе тепло мастерских рук и индивидуальный авторский стиль. Глина, керамика, шамот — традиционные материалы, обретающие новую жизнь в современных формах.
+        </p>
+        <p class="signature">— Авторские работы, созданные с душой</p>
+    </div>
+    
+    <footer>
+        <p>© 2024 Argillia - авторская керамика и скульптура</p>
+        <body link='blue' alink='purple' vlink='blue'>
+        <A href='file:///C:/Users/User/Desktop/%D0%A1%D0%B0%D0%B9%D1%82.html'>Вернуться назад</a>
+    </footer>
+</body>
+</html>
